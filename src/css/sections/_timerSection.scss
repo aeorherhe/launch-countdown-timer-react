@@ -1,0 +1,90 @@
+@use "../base/index" as *;
+
+.timers-section {
+  text-transform: uppercase;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  h2 {
+    color: $White;
+    margin: 2rem 0;
+  }
+}
+
+.timers-ctn {
+  padding: 1rem;
+  //   border: $line-2;
+  @include flex(center, row, 2rem, space-evenly);
+}
+
+.timer {
+  h3 {
+    color: $Grayish-blue;
+  }
+}
+
+.timer-count {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+
+  .top {
+    @include flipper;
+    border-radius: 0.5rem 0.5rem 0 0;
+    top: 0;
+    filter: brightness(0.8);
+  }
+
+  .bottom {
+    @include flipper;
+    border-radius: 0 0 0.5rem 0.5rem;
+    bottom: 0;
+  }
+}
+
+.timer-count::before {
+  @include divider;
+  right: -0.25rem;
+}
+
+.timer-count::after {
+  @include divider;
+  left: -0.25rem;
+}
+
+.time {
+  position: relative;
+  z-index: 11;
+  border-radius: 0.5rem;
+  color: $Soft-red;
+  //   padding: 2rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  max-width: 80%;
+}
+
+@media (min-width: 45rem) {
+  .time {
+    padding: 2rem;
+    font-size: 5rem;
+  }
+}
+@media (max-width: 50rem) {
+  .time {
+    font-size: 2rem;
+  }
+
+  .timer-count::before {
+    @include divider;
+    right: -0.125rem;
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+
+  .timer-count::after {
+    @include divider;
+    width: 0.5rem;
+    left: -0.125rem;
+    height: 0.5rem;
+  }
+}

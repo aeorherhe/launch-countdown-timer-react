@@ -1,0 +1,15 @@
+@use "../base/index" as *;
+
+.social-links {
+  margin-top: 15rem;
+  a {
+    margin: 1rem;
+    color: $Grayish-blue;
+  }
+}
+
+@media screen and (min-width: 45rem) {
+  .social-links {
+    font-size: 2rem;
+  }
+}

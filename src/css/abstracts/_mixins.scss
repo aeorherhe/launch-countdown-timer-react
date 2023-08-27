@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as *;
+
+// flex
+@mixin flex($align, $direction, $gap, $justify) {
+  display: flex;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+  justify-content: $justify;
+}
+
+@mixin divider() {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: $Very-dark-blue;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+@media (max-width: 45rem) {
+  @mixin divider() {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+}
+
+@mixin flipper {
+  border-radius: 0 0 0.5rem 0.5rem;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $Dark-desaturated-blue;
+}

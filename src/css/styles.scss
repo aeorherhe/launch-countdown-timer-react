@@ -1,0 +1,15 @@
+// general
+@use "./base/resets";
+
+/***************
+ Project Styles
+***************/
+
+// timer section
+@use "./sections/_timerSection";
+
+// social links
+@use "./sections/_socialLinks";
+
+// my profile
+@use "./sections/_myProfile";

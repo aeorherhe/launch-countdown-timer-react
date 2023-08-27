@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body > div {
+  display: grid;
+  background-color: $Very-dark-blue;
+  background-color: $Very-dark-blue2;
+  background-image: url(/public/images/pattern-hills.svg),
+    url(/images/bg-stars.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: bottom, center;
+  background-size: 100% 20%, 100%;
+  font-family: "Red Hat Text", "Be Vietnam Pro", Arial, Helvetica, sans-serif;
+  place-items: center;
+  height: 100vh;
+}
+
+.main {
+  width: 90vw;
+  max-width: 55rem;
+  text-align: center;
+}
