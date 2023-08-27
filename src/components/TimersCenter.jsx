@@ -10,8 +10,6 @@ const defaultTime = {
   days: "13", hours: "23", minutes: "59", seconds: "59",
 };
 
-// let remainingTime;
-
 export const TimersCenter = () => {
   const [countDown, setCountDown] = useState(defaultTime);
 

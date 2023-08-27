@@ -1,10 +1,11 @@
 @use "../base/index" as *;
 
 .timers-section {
-  text-transform: uppercase;
   padding: 1rem;
   text-align: center;
+  text-transform: uppercase;
   width: 100%;
+
   h2 {
     color: $White;
     margin: 2rem 0;
@@ -13,8 +14,7 @@
 
 .timers-ctn {
   padding: 1rem;
-  //   border: $line-2;
-  @include flex(center, row, 2rem, space-evenly);
+  @include flex(center, row, 1rem, space-evenly);
 }
 
 .timer {
@@ -27,6 +27,7 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 1rem;
+  padding: 1rem;
 
   .top {
     @include flipper;
@@ -57,19 +58,21 @@
   z-index: 11;
   border-radius: 0.5rem;
   color: $Soft-red;
-  //   padding: 2rem;
-  padding: 1rem;
   font-size: 2.5rem;
   max-width: 80%;
 }
 
 @media (min-width: 45rem) {
-  .time {
+  .timer-count {
     padding: 2rem;
+  }
+
+  .time {
     font-size: 5rem;
   }
 }
-@media (max-width: 50rem) {
+
+@media (max-width: 45rem) {
   .time {
     font-size: 2rem;
   }
@@ -86,5 +89,11 @@
     width: 0.5rem;
     left: -0.125rem;
     height: 0.5rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .time {
+    font-size: 2.5rem;
   }
 }

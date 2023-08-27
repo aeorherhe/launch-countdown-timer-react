@@ -21,13 +21,6 @@
   z-index: 1;
 }
 
-@media (max-width: 45rem) {
-  @mixin divider() {
-    height: 0.5rem;
-    width: 0.5rem;
-  }
-}
-
 @mixin flipper {
   border-radius: 0 0 0.5rem 0.5rem;
   height: 50%;

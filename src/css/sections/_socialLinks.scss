@@ -2,9 +2,15 @@
 
 .social-links {
   margin-top: 15rem;
+
   a {
     margin: 1rem;
     color: $Grayish-blue;
+    transition: $transition;
+  }
+
+  a:hover {
+    color: $Soft-red;
   }
 }
 

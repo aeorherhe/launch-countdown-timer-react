@@ -12,8 +12,8 @@ Thanks for checking out this front-end coding challenge.
 
 ### Links
 
-- Solution URL: [solution](https://github.com/aeorherhe/Manage-landing-page-react.git)
-- Live Site URL: [live site](https://aeorherhe-manage-landing-page.netlify.app/)
+- Solution URL: [solution](https://github.com/aeorherhe/launch-countdown-timer-react.git)
+- Live Site URL: [live site](https://aeorherhe-countdown-timer.netlify.app)
 
 ### Built with
 
@@ -22,14 +22,13 @@ Thanks for checking out this front-end coding challenge.
 - Flexbox
 - Mobile-first workflow
 - ES6 modules
+- Set Interval
 - React
 - NanoID library
 - Vite
 - React Icons
 - Sass Partials
 - Sass Mixins
-- new Date()
-- Object.entries(Object.keys, Object.values)
 
 ## Author
 
